@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky Day</title>
+    <script src="./jquery.min.js"></script>
+    <link rel="stylesheet" href="Project.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- Place your logo here -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="MainPage.html">Main Page</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="luckyDay.html">Lucky Day</a></li>
+          <li><a href="qa.html">FAQs</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1
+      class="contactText"
+      style="
+        font-size: 48px;
+        color: #550a21;
+        margin-bottom: 20px;
+        text-align: center;
+      "
+    >
+      Frequently Asked Questions
+    </h1>
+
+    <div class="faq-container">
+      <div class="faq-section">
+        <div class="faq-question">
+          Question 1
+          <span class="faq-arrow"></span>
+        </div>
+        <div class="faq-answer">Answer 1</div>
+      </div>
+    
+      <div class="faq-section">
+        <div class="faq-question">
+          Question 2
+          <span class="faq-arrow"></span>
+        </div>
+        <div class="faq-answer">Answer 2</div>
+      </div>
+    
+      <div class="faq-section">
+        <div class="faq-question">
+          Question 3
+          <span class="faq-arrow"></span>
+        </div>
+        <div class="faq-answer">Answer 3</div>
+      </div>
+    
+      <!-- Add more FAQ sections as needed -->
+    </div>
+    
+
+    <script>
+      // Add click event listeners to the FAQ questions
+      document.querySelectorAll('.faq-question').forEach(function (question) {
+  question.addEventListener('click', function () {
+    // Toggle the display of the answer when the question is clicked
+    var answer = this.nextElementSibling;
+    answer.classList.toggle('show');
+  });
+});
+    </script>
+
+    <footer>
+      <p>&copy; 2023 Event Announcements. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
